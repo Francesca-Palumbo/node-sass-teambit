@@ -378,6 +378,7 @@ body {
   height: 75px;
   width: 100%;
   position: fixed;
+  background-color: white;
 }
 
 #header-contenitore #header-wrapper {
@@ -450,6 +451,182 @@ body {
 }
 
 #header-contenitore::after {
+  content: "";
+  width: 85%;
+  margin: auto;
+  height: 1px;
+  display: block;
+  background-color: #58402c;
+  margin-bottom: 30px;
+}
+
+#primo-div {
+  height: 600px;
+  width: 100%;
+  padding-top: 200px;
+}
+
+#primo-div #div-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra {
+  width: 50%;
+  float: left;
+  color: #58402c;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra #testo-sopra {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra #testo-sotto {
+  font-size: 22px;
+  color: #58402c;
+  line-height: 1.8;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni {
+  display: flex;
+  align-items: center;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-sinistra {
+  width: 186px;
+  height: 35px;
+  background-color: #30488f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-sinistra img {
+  max-width: 17px;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-sinistra:hover {
+  background-color: #233569;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-destra {
+  width: 186px;
+  height: 35px;
+  background-color: #30488f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-destra img {
+  max-width: 17px;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra .contenitore-bottoni #bottone-destra:hover {
+  background-color: #233569;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra #paragrafetto {
+  margin-top: 20px;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra #paragrafetto a {
+  text-decoration: none;
+  color: #58402c;
+  font-size: 14px;
+}
+
+#primo-div #div-wrapper #primo-div-sinistra #paragrafetto a:hover {
+  color: #233569;
+}
+
+#primo-div #div-wrapper #primo-div-destra {
+  width: 50%;
+  float: right;
+}
+
+#primo-div #div-wrapper #primo-div-destra img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#secondo-div {
+  width: 100%;
+  height: 1800px;
+  padding-top: 50px;
+  background-color: #ffe7d2;
+}
+
+#secondo-div #paragrafo-traditinal-people {
+  font-size: 26px;
+  font-weight: 600;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.53;
+}
+
+#secondo-div #tre-immagini {
+  width: 70%;
+  height: 235px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+#secondo-div #tre-immagini figure {
+  width: 225px;
+  height: 200px;
+  display: inline-block;
+}
+
+#secondo-div #tre-immagini figure .contenitore-img {
+  width: 140px;
+  height: 110px;
+  margin: auto;
+}
+
+#secondo-div #tre-immagini figure .contenitore-img img {
+  max-width: 100%;
+}
+
+#secondo-div #tre-immagini figure figcaption {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding-top: 35px;
+  color: #58402c;
+}
+
+#secondo-div .immagine-coniglio {
+  width: 270px;
+  height: 280px;
+  margin: auto;
+  padding-top: 35px;
+  margin-bottom: 110px;
+}
+
+#secondo-div .immagine-coniglio img {
+  max-width: 100%;
+}
+
+#secondo-div #sezione-sopra::after {
   content: "";
   width: 85%;
   margin: auto;

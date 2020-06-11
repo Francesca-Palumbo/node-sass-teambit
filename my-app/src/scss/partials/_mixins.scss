@@ -13,6 +13,10 @@
     border-radius: $radius;
 };
 
+@mixin font-size ($size){
+    font-size: $size;
+}
+
 @mixin linea-after($after_color) {
     content: "";
     width: 85%;
@@ -21,4 +25,48 @@
     display: block;
     background-color: $after_color;
     margin-bottom: 30px;
+}
+
+@mixin bottoni_blu($colore_blu){
+    width: 186px;
+    height: 35px;
+    background-color: $colore_blu;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+@mixin impostazione_titolo{
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.53;
+}
+
+@mixin figure_proprieta{
+    width: 225px;
+    height: 200px;
+}
+
+@mixin contenitore_img_proprieta{
+    width: 140px;
+    height: 110px;
+    margin: auto;
+}
+
+@mixin figcaption_proprieta{
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-top: 35px;
+    color: $colore_principale;
+}
+
+@mixin img_coniglio_proprieta{
+    width: 270px;
+    height: 280px;
+    margin: auto;
+    padding-top: 35px;
 }
