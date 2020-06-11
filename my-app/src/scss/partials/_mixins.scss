@@ -3,4 +3,22 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+};
+
+@mixin list-style {
+    list-style-type: none;
+};
+
+@mixin border-radius ($radius){
+    border-radius: $radius;
+};
+
+@mixin linea-after($after_color) {
+    content: "";
+    width: 85%;
+    margin: auto;
+    height: 1px;
+    display: block;
+    background-color: $after_color;
+    margin-bottom: 30px;
 }

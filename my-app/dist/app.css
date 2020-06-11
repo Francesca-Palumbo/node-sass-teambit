@@ -369,14 +369,18 @@ template {
   display: none;
 }
 
+body {
+  font-family: "HarmoniaSansProCyr-SemiBd";
+  font-family: "HarmoniaSansProCyr-Regular", Arial, sans-serif;
+}
+
 #header-contenitore {
   height: 75px;
   width: 100%;
+  position: fixed;
 }
 
 #header-contenitore #header-wrapper {
-  height: 100%;
-  width: 100%;
   padding: 20px 0;
 }
 
@@ -384,9 +388,74 @@ template {
   height: 35px;
   width: 1150px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body {
-  font-family: "HarmoniaSansProCyr-SemiBd";
+#header-contenitore #header-wrapper nav img {
+  cursor: pointer;
+}
+
+#header-contenitore #header-wrapper nav #lista-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+#header-contenitore #header-wrapper nav #lista-header li {
+  text-decoration: none;
+}
+
+#header-contenitore #header-wrapper nav #lista-header li a {
+  text-decoration: none;
+  color: #58402c;
+  font-weight: 750;
+  font-size: 13px;
+  margin-right: 37px;
+}
+
+#header-contenitore #header-wrapper nav #lista-header li a:hover {
+  color: #30488f;
+}
+
+#header-contenitore #header-wrapper nav button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #30488f;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: #30488f;
+  cursor: pointer;
+}
+
+#header-contenitore #header-wrapper nav button img {
+  max-width: 17px;
+  margin-right: 6px;
+}
+
+#header-contenitore #header-wrapper nav button span {
+  font-size: 15px;
+}
+
+#header-contenitore #header-wrapper nav button:hover {
+  background-color: #30488f;
+  color: white;
+}
+
+#header-contenitore::after {
+  content: "";
+  width: 85%;
+  margin: auto;
+  height: 1px;
+  display: block;
+  background-color: #58402c;
+  margin-bottom: 30px;
 }
 
