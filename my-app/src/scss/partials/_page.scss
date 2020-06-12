@@ -57,7 +57,7 @@
                 }
             }
 
-            #paragrafetto {
+            .paragrafetto {
                 margin-top: 20px;
 
                 a{
@@ -339,6 +339,7 @@
         align-items: center;
         padding-top: 35px;
         width: 30%;
+        padding-left: 474px;
 
         #bottone-sin{
             @include bottoni_blu ($colore_blu);
@@ -366,6 +367,19 @@
         }
         #bottone-destra:hover{
             background-color: #233569;
+        }
+    }
+    .paragrafetto {
+        margin-top: 20px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: $colore_principale;
+            font-size: 14px;
+        }
+        a:hover{
+            color: $colore_blu_hover;
         }
     }
 }

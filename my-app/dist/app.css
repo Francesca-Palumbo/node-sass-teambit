@@ -542,17 +542,17 @@ body {
   background-color: #233569;
 }
 
-#primo-div #div-wrapper #primo-div-sinistra #paragrafetto {
+#primo-div #div-wrapper #primo-div-sinistra .paragrafetto {
   margin-top: 20px;
 }
 
-#primo-div #div-wrapper #primo-div-sinistra #paragrafetto a {
+#primo-div #div-wrapper #primo-div-sinistra .paragrafetto a {
   text-decoration: none;
   color: #58402c;
   font-size: 14px;
 }
 
-#primo-div #div-wrapper #primo-div-sinistra #paragrafetto a:hover {
+#primo-div #div-wrapper #primo-div-sinistra .paragrafetto a:hover {
   color: #233569;
 }
 
@@ -908,6 +908,7 @@ body {
   align-items: center;
   padding-top: 35px;
   width: 30%;
+  padding-left: 474px;
 }
 
 #blocco-blocknote .contenitore-botton #bottone-sin {
@@ -956,5 +957,20 @@ body {
 
 #blocco-blocknote .contenitore-botton #bottone-destra:hover {
   background-color: #233569;
+}
+
+#blocco-blocknote .paragrafetto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#blocco-blocknote .paragrafetto a {
+  text-decoration: none;
+  color: #58402c;
+  font-size: 14px;
+}
+
+#blocco-blocknote .paragrafetto a:hover {
+  color: #233569;
 }
 
