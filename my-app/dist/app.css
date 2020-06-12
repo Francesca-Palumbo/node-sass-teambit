@@ -722,7 +722,7 @@ body {
 
 #blocco-quattro-sezioni {
   width: 100%;
-  height: 2000px;
+  height: 2550px;
   margin-top: 60px;
 }
 
@@ -844,5 +844,117 @@ body {
 
 #blocco-quattro-sezioni .sezione-singola-riga .img-destra img {
   max-width: 110%;
+}
+
+#blocco-blocknote {
+  padding-top: 90px;
+  height: 800px;
+  width: 100%;
+  background-color: #ffe7d2;
+}
+
+#blocco-blocknote #titolo-centrale {
+  font-weight: 550;
+  text-align: center;
+  width: 52%;
+  font-size: 40px;
+  line-height: 1.53;
+  color: #58402c;
+  margin: auto;
+}
+
+#blocco-blocknote #blocknote {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: white;
+  border: 1px solid #bdb5af;
+  padding: 20px 20px 20px 40px;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #58402c;
+}
+
+#blocco-blocknote #blocknote .footer-blocknote {
+  padding: 25px 0px;
+}
+
+#blocco-blocknote #blocknote .footer-blocknote .due-img-persone {
+  width: 88px;
+  height: 38px;
+  float: left;
+}
+
+#blocco-blocknote #blocknote .footer-blocknote .due-img-persone img {
+  border-radius: 50%;
+  float: left;
+  max-width: 50%;
+}
+
+#blocco-blocknote #blocknote .footer-blocknote #nomi-ragazzo-sopra {
+  margin-left: 18px;
+  color: #58402c;
+}
+
+#blocco-blocknote #blocknote .footer-blocknote #nomi-ragazzo-sotto {
+  margin-left: 18px;
+  color: #233569;
+}
+
+#blocco-blocknote .contenitore-botton {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  width: 30%;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-sin {
+  width: 186px;
+  height: 35px;
+  background-color: #30488f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-sin img {
+  max-width: 17px;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-sin:hover {
+  background-color: #233569;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-dx {
+  width: 186px;
+  height: 35px;
+  background-color: #30488f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-dx img {
+  max-width: 17px;
+}
+
+#blocco-blocknote .contenitore-botton #bottone-destra:hover {
+  background-color: #233569;
 }
 

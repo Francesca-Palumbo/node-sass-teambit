@@ -192,7 +192,7 @@
 
 #blocco-quattro-sezioni{
     width: 100%;
-    height: 2000px;
+    height: 2550px;
     margin-top: 60px;
 
     .sezione-singola-riga{
@@ -286,6 +286,86 @@
             img{
                 max-width: 110%;
             }
+        }
+    }
+}
+
+// FINE blocco con le 4 sezioni a 2 a 2 uguali
+
+// BLOCCO con blocknote
+
+#blocco-blocknote{
+    padding-top: 90px;
+    height: 800px;
+    width: 100%;
+    background-color: $colore_rosa;
+
+    #titolo-centrale{
+        @include titolo-centrale-struttura;
+    }
+
+    #blocknote{
+        @include blockquote;
+
+        .footer-blocknote{
+            padding: 25px 0px;
+
+            .due-img-persone{
+                width: 88px;
+                height: 38px;
+                float: left;
+
+                img{
+                    border-radius: 50%;
+                    float: left;
+                    max-width: 50%;
+                }
+            }
+
+            #nomi-ragazzo-sopra{
+                margin-left: 18px;
+                color: $colore_principale;
+            }
+
+            #nomi-ragazzo-sotto{
+                margin-left: 18px;
+                color: $colore_blu_hover;
+            }
+        }
+    }
+
+    .contenitore-botton{
+        display: flex;
+        align-items: center;
+        padding-top: 35px;
+        width: 30%;
+
+        #bottone-sin{
+            @include bottoni_blu ($colore_blu);
+            @include my-flex (row, space-around, center);
+            margin-right: 14px;
+            cursor: pointer;
+
+            img{
+                max-width: $grandezza_icone_piccole;
+            }
+        }
+        #bottone-sin:hover{
+            background-color: #233569;
+        }
+
+        #bottone-dx{
+            @include bottoni_blu ($colore_blu);
+            @include my-flex (row, space-around, center);
+            margin-left: 14px;
+            cursor: pointer;
+
+            img{
+                max-width: $grandezza_icone_piccole;
+            }
+        }
+        #bottone-destra:hover{
+            background-color: #233569;
         }
     }
 }
