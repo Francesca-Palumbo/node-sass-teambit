@@ -43,6 +43,7 @@
     margin: auto;
     text-align: center;
     line-height: 1.53;
+    color: $colore_principale;
 }
 
 @mixin figure_proprieta{
@@ -69,4 +70,11 @@
     height: 280px;
     margin: auto;
     padding-top: 35px;
+}
+
+@mixin tre-immagini-animaletti{
+    width: 70%;
+    height: 235px;
+    padding-top: 30px;
+    margin: auto;
 }

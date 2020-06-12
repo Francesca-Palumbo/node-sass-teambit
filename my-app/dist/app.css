@@ -567,46 +567,47 @@ body {
      object-fit: contain;
 }
 
-#secondo-div {
+#secondo-blocco {
   width: 100%;
   height: 1800px;
   padding-top: 50px;
   background-color: #ffe7d2;
 }
 
-#secondo-div #paragrafo-traditinal-people {
+#secondo-blocco .sezione-singola .paragrafo-teambit-modern {
   font-size: 26px;
   font-weight: 600;
   width: 50%;
   margin: auto;
   text-align: center;
   line-height: 1.53;
+  color: #58402c;
 }
 
-#secondo-div #tre-immagini {
+#secondo-blocco .sezione-singola .tre-immagini {
   width: 70%;
   height: 235px;
   padding-top: 30px;
   margin: auto;
 }
 
-#secondo-div #tre-immagini figure {
+#secondo-blocco .sezione-singola .tre-immagini figure {
   width: 225px;
   height: 200px;
   display: inline-block;
 }
 
-#secondo-div #tre-immagini figure .contenitore-img {
+#secondo-blocco .sezione-singola .tre-immagini figure .contenitore-img {
   width: 140px;
   height: 110px;
   margin: auto;
 }
 
-#secondo-div #tre-immagini figure .contenitore-img img {
+#secondo-blocco .sezione-singola .tre-immagini figure .contenitore-img img {
   max-width: 100%;
 }
 
-#secondo-div #tre-immagini figure figcaption {
+#secondo-blocco .sezione-singola .tre-immagini figure figcaption {
   text-align: center;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -614,7 +615,7 @@ body {
   color: #58402c;
 }
 
-#secondo-div .immagine-coniglio {
+#secondo-blocco .sezione-singola .immagine-coniglio {
   width: 270px;
   height: 280px;
   margin: auto;
@@ -622,11 +623,11 @@ body {
   margin-bottom: 110px;
 }
 
-#secondo-div .immagine-coniglio img {
+#secondo-blocco .sezione-singola .immagine-coniglio img {
   max-width: 100%;
 }
 
-#secondo-div #sezione-sopra::after {
+#secondo-blocco .sezione-singola::after {
   content: "";
   width: 85%;
   margin: auto;
@@ -634,5 +635,88 @@ body {
   display: block;
   background-color: #58402c;
   margin-bottom: 30px;
+}
+
+#secondo-blocco .sezione-sotto {
+  padding-top: 60px;
+}
+
+#secondo-blocco .sezione-sotto .paragrafo-teambit-modern {
+  font-size: 26px;
+  font-weight: 600;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.53;
+  color: #58402c;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini {
+  width: 70%;
+  height: 235px;
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure {
+  width: 225px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure .contenitore-img {
+  width: 140px;
+  height: 110px;
+  margin: auto;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure .contenitore-img img {
+  max-width: 100%;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure #terza-img {
+  width: 140px;
+  height: 110px;
+  margin: auto;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure #terza-img img {
+  max-width: 50%;
+}
+
+#secondo-blocco .sezione-sotto .tre-immagini figure figcaption {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding-top: 35px;
+  color: #58402c;
+}
+
+#secondo-blocco .sezione-sotto .immagine-coniglio {
+  width: 270px;
+  height: 280px;
+  margin: auto;
+  padding-top: 35px;
+  padding: 50px 0px 70px 0px;
+}
+
+#secondo-blocco .sezione-sotto .immagine-coniglio img {
+  max-width: 100%;
+}
+
+#secondo-blocco .sezione-sotto p {
+  font-size: 26px;
+  font-weight: 600;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.53;
+  color: #58402c;
+  padding-top: 40px;
 }
 

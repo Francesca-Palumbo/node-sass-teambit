@@ -2,7 +2,6 @@
     height: 600px;
     width: 100%;
     padding-top: 200px;
-    // background-color: $colore_panna;
 
     #div-wrapper{
         width: 85%;
@@ -84,51 +83,107 @@
     }
 }
 
-#secondo-div{
+// parte 1 della sezione con le immagini e sfondo ROSA
+
+#secondo-blocco{
     width: 100%;
     height: 1800px;
     padding-top: 50px;
     background-color: #ffe7d2;
 
-    #paragrafo-traditinal-people{
-        @include font-size (26px);
-        @include impostazione_titolo;
-    }
+    .sezione-singola{
 
-    #tre-immagini{
-        width: 70%;
-        height: 235px;
-        padding-top: 30px;
-        margin: auto;
+        .paragrafo-teambit-modern{
+            @include font-size (26px);
+            @include impostazione_titolo;
+        }
 
-        figure{
-            @include figure_proprieta;
-            display: inline-block;
+        .tre-immagini{
+            @include tre-immagini-animaletti;
 
-            .contenitore-img{
-                @include contenitore_img_proprieta;
+            figure{
+                @include figure_proprieta;
+                display: inline-block;
 
-                img{
-                    max-width: 100%;
+                .contenitore-img{
+                    @include contenitore_img_proprieta;
+
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+                figcaption{
+                    @include figcaption_proprieta;
                 }
             }
+        }
+        .immagine-coniglio{
+            @include img_coniglio_proprieta;
+            margin-bottom: 110px;
 
-            figcaption{
-                @include figcaption_proprieta;
+            img{
+                max-width: 100%;
             }
         }
     }
-
-    .immagine-coniglio{
-        @include img_coniglio_proprieta;
-        margin-bottom: 110px;
-
-        img{
-            max-width: 100%;
-        }
+    .sezione-singola::after{
+        @include linea-after($colore_principale);
     }
 
-    #sezione-sopra::after{
-        @include linea-after($colore_principale);
+// volevo copiare le classi della parte di sopra ma non prendeva tutte le proprietà
+
+    .sezione-sotto{
+        padding-top: 60px;
+
+        .paragrafo-teambit-modern{
+            @include font-size (26px);
+            @include impostazione_titolo;
+        }
+
+        .tre-immagini{
+            @include tre-immagini-animaletti;
+            @include my-flex (row, center, center);
+
+            figure{
+                @include figure_proprieta;
+                display: inline-block;
+                text-align: center;
+
+                .contenitore-img{
+                    @include contenitore_img_proprieta;
+
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+                #terza-img{
+                    @include contenitore_img_proprieta;
+
+                    img{
+                        max-width: 50%;
+                    }
+                }
+
+                figcaption{
+                    @include figcaption_proprieta;
+                }
+            }
+        }
+        .immagine-coniglio{
+            @include img_coniglio_proprieta;
+            padding: 50px 0px 70px 0px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        p{
+            @include font-size (26px);
+            @include impostazione_titolo;
+            padding-top: 40px;
+        }
     }
 }
