@@ -78,3 +78,34 @@
     padding-top: 30px;
     margin: auto;
 }
+
+@mixin struttura-base-sezioni{
+    width: 100%;
+    height: 600px;
+    padding-top: 90px;
+}
+
+@mixin struttura-base-sezione-singola{
+    width: 49%;
+    height: 470px;
+    margin: 0;
+}
+
+@mixin impostazioni_titolo{
+    font-weight: 600;
+    width: 65%;
+    line-height: 1.53;
+    color: $colore_principale;
+}
+
+@mixin impostazioni-testo{
+    font-size: 22px;
+    color: #58402c;
+    line-height: 1.8;
+}
+
+@mixin link-struttura{
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: #30488F;
+}

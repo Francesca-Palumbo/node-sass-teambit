@@ -187,3 +187,105 @@
         }
     }
 }
+
+// il blocco con le 4 sezioni a 2 a 2 uguali
+
+#blocco-quattro-sezioni{
+    width: 100%;
+    height: 2000px;
+    margin-top: 60px;
+
+    .sezione-singola-riga{
+        @include struttura-base-sezioni;
+
+        .img-sinistra{
+            @include struttura-base-sezione-singola;
+            float: left;
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .sezione-testo-destra{
+            @include struttura-base-sezione-singola;
+            float: left;
+
+            .paragrafo-titolo{
+                @include font-size (26px);
+                @include impostazioni_titolo;
+                padding-left: 30px;
+            }
+
+            .paragrafo-testo{
+                @include impostazioni-testo;
+                padding-left: 30px;
+            }
+
+            .link-struttura a{
+                @include link-struttura;
+                padding-left: 30px;
+            }
+
+            .immagine-pinguino{
+                width: 420px;
+                height: 200px;
+                margin: auto;
+
+                img{
+                    padding-top: 20px;
+                    max-width: 110%;
+                }
+            }
+        }
+    }
+    .sezione-singola-riga{
+        padding-top: 20px;
+
+        .sezione-testo-sinistra{
+            @include struttura-base-sezione-singola;
+            float: left;
+
+            .paragrafo-titolo{
+                @include font-size (26px);
+                @include impostazioni_titolo;
+                padding-left: 200px;
+                margin: 0;
+            }
+
+            .paragrafo-testo{
+                @include impostazioni-testo;
+                padding-left: 200px;
+                margin: 0;
+                margin-top: 20px;
+            }
+
+            .link-struttura a{
+                @include link-struttura;
+                padding-left: 200px;
+                margin: 0;
+            }
+
+            .immagine-pinguino{
+                width: 420px;
+                height: 200px;
+                margin: auto;
+                padding-left: 270px;
+
+                img{
+                    padding-top: 20px;
+                    max-width: 60%;
+                }
+            }
+        }
+        .img-destra{
+            @include struttura-base-sezione-singola;
+            float: left;
+            margin: 0;
+
+            img{
+                max-width: 110%;
+            }
+        }
+    }
+}
